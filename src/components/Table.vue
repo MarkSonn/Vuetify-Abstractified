@@ -36,16 +36,12 @@
   </v-card>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
-
 <script>
   export default {
     props: {
       headers: {
         type: Array,
-        default: [
+        default: () => [
           {
             text: 'Dessert (100g serving)',
             align: 'left',
@@ -60,7 +56,7 @@
       },
       items: {
         type: Array,
-        default: [
+        default: () => [
           {
             value: false,
             name: 'Frozen Yogurt',

@@ -1,13 +1,18 @@
 <template>
-  <v-toolbar :color="color" :dark="dark" :dense="dense" :flat="flat">
+  <v-toolbar
+    :dark="dark"
+    :light="light"
+    :color="color"
+    :dense="dense"
+    :flat="flat">
 
-    <!-- Start -->
     <v-toolbar-side-icon v-if="sidebar"></v-toolbar-side-icon>
     <v-toolbar-title class="white--text">{{ title }}</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
     <slot>
+      <!-- Default buttons and actions -->
       <v-btn flat>Link One</v-btn>
       <v-btn flat>Link Two</v-btn>
       <v-btn flat>Link Three</v-btn>
@@ -32,10 +37,6 @@
   </v-toolbar>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
-
 <script>
 export default {
     props: {
@@ -43,8 +44,15 @@ export default {
         type: String,
         default: 'Example Title'
       },
-      color: String,
-      dark: Boolean,
+      dark: {
+        type: Boolean,
+        default: true
+      },
+      light: Boolean,
+      color: {
+        type: String,
+        default: "primary"
+      },
       dense: Boolean,
       flat: Boolean,
       sidebar: Boolean
