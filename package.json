@@ -1,11 +1,11 @@
 {
   "name": "vuetify-abstractified",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1-beta",
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build --target lib --name flock ./src/components/_globals.js",
-    "build-wc": "vue-cli-service build --target wc --name flock 'src/components/*.vue'",
-    "build-wc-async": "vue-cli-service build --target wc-async --name flock 'src/components/*.vue'",
+    "build": "vue-cli-service build --target lib --name vuetify_abstractified ./src/components/_globals.js",
+    "build-wc": "vue-cli-service build --target wc --name vuetify_abstractified 'src/components/*.vue'",
+    "build-wc-async": "vue-cli-service build --target wc-async --name vuetify_abstractified 'src/components/*.vue'",
     "test": "vue-cli-service test",
     "e2e": "vue-cli-service e2e",
     "lint": "vue-cli-service lint",
@@ -23,7 +23,7 @@
     "*.json",
     "*.js"
   ],
-  "main": "./dist/flock.common.js",
+  "main": "./dist/vuetify_abstractified.common.js",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.5",
     "@vue/cli-plugin-e2e-cypress": "^3.0.0-beta.5",
@@ -56,7 +56,7 @@
       "git add"
     ]
   },
-  "description": "## How to use: 1. Just use `npm install --save @flockos/vue-components` 2. Use the components in your file directly.",
+  "description": "## How to use: 1. Just use `npm install --save @vuetify_abstractifiedos/vue-components` 2. Use the components in your file directly.",
   "directories": {
     "test": "tests"
   },
