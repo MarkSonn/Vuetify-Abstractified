@@ -1,27 +1,25 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import router from './router'
+import Vue from 'vue';
+import eventBus from '@/helpers/eventBus';
+import './components/_globals';
+import App from './App.vue';
 
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
-import colors from 'vuetify/es5/util/colors'
+Vue.config.productionTip = false;
 
-Vue.use(Vuetify, {
-  theme: {
-    primary: colors.blue.base,
-    secondary: colors.red.base,
-    accent: colors.green.base
-  }
-})
+function triggerGlobalClick(e) {
+  e.stopPropagation();
+  eventBus.$emit('focusChanged', this);
+}
+document.addEventListener('click', triggerGlobalClick);
 
-Vue.config.productionTip = false
+Vue.mixin({
+  mounted() {
+    this.$el.addEventListener('click', triggerGlobalClick);
+  },
+  beforeDestroy() {
+    this.$el.removeEventListener('click', triggerGlobalClick);
+  },
+});
 
-/* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
-})
+  render: h => h(App),
+}).$mount('#app');

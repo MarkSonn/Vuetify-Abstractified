@@ -1,6 +1,5 @@
 <template>
   <v-expansion-panel
-    v-model="panel"
     :dark="dark"
     :light="light"
     :disabled="disabled"
