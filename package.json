@@ -1,6 +1,6 @@
 {
   "name": "vuetify-abstractified",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1-beta",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build --target lib --name vuetify_abstractified ./src/components/_globals.js",
