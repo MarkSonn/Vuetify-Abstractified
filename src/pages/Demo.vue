@@ -18,7 +18,7 @@
     <!-- <Card color="secondary" dark title="Code"><code>{{ msg }}</code></Card> -->
 
 
-    <Footer class="bottom" tabColor="primary" copyright="Mark Sonnenschein" :links="links"></Footer>
+    <Footer class="bottom" tabColor="primary" copyright="Mark Sonnenschein" :tabs="tabs"></Footer>
 
 
   </div>
@@ -166,13 +166,10 @@ export default {
         iron: '6%'
       }
     ],
-    links: [
-      'Home',
-      'About Us',
-      'Team',
-      'Services',
-      'Blog',
-      'Contact Us'
+    tabs: [
+      {label: 'Default 1', link: '#one'},
+      {label: 'Default 2', link: '#two'},
+      {label: 'Default 3', link: '#three'}
     ],
     panelData: [
       { header: 'Home', content: 'Welcome' },

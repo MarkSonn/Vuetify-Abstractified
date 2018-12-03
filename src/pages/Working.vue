@@ -6,6 +6,8 @@
 
     <Card title="Hello" subtitle="lol">Yayyyy</Card>
 
+  <Footer color="secondary"></Footer>
+
   </div>
 </template>
 

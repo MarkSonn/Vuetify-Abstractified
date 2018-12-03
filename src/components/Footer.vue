@@ -1,21 +1,22 @@
 <template>
   <v-footer
     height="auto"
-    :color="tabColor">
+    :color="color + ' lighten-1'">
     <v-layout
       justify-center
       row
       wrap>
       <v-btn
-        v-for="link in links"
-        :key="link"
+        v-for="(tab, i) in tabs"
+        :key="i"
         color="white"
         flat
-        round>
-        {{ link }}
+        round
+        :href="tab.link">
+        {{ tab.label }}
       </v-btn>
       <v-flex
-        primary
+        :class="color"
         lighten-2
         py-3
         text-xs-center
@@ -30,20 +31,20 @@
 <script>
   export default {
     props: {
-      tabColor: {
+      color: {
         type: String,
-        default: 'primary lighten-1'
+        default: 'secondary'
       },
       copyright: {
         type: String,
         default: "Your Organisation"
       },
-      links: {
+      tabs: {
           type: Array,
           default: () => [
-            'Default 1',
-            'Default 2',
-            'Default 3'
+            {label: 'Default 1', link: '#one'},
+            {label: 'Default 2', link: '#two'},
+            {label: 'Default 3', link: '#three'}
           ]
       }
     }
