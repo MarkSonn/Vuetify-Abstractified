@@ -4,9 +4,16 @@
       <v-btn to="/demo" flat>Demo</v-btn>
     </Navbar>
 
-    <Card title="Hello" subtitle="lol">Yayyyy</Card>
+    <!-- <Dialog color="red" label="Hello" header-color="green" header="Memes" prompt="Wack">
+    alalal
+    </Dialog> -->
 
-  <Footer color="secondary"></Footer>
+    <!-- <Select label="Helo" color="green" theme="box" hint="memes" multiple chips></Select> -->
+
+
+    <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card>
+
+  <Footer color="secondary"></Footer> -->
 
   </div>
 </template>
