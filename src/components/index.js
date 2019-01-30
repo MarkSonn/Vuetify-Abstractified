@@ -7,6 +7,7 @@ import ExpansionPanel from '@/components/ExpansionPanel'
 import Select from '@/components/Select'
 import Dialog from '@/components/Dialog'
 import Progress from '@/components/Progress'
+import Control from '@/components/Control'
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Select,
   Dialog,
   Progress,
+  Control,
 }

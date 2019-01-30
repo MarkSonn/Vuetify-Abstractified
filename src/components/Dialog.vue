@@ -20,7 +20,7 @@
         :color="cardColor">
         <!-- Need to fix up headerColor (should be grey on default) -->
         <v-card-title
-          :class="headerColor ? headerColor : headerColor === 'grey'"
+          :class="headerColor"
           class="headline lighten-2"
           primary-title>
           <v-btn icon dark v-if="fullscreen" @click="dialog = false">
@@ -53,15 +53,30 @@
   export default {
     props: {
         width: Number,
-        color: String,
+        color: {
+            default: "primary",
+            type: String
+        },
         label: String,
         header: String,
-        headerColor: String,
+        headerColor: {
+            default: "grey",
+            type: String
+        },
         cardColor: String,
         prompt: String,
-        promptColor: String,
-        fullscreen: Boolean,
-        scrollable: Boolean
+        promptColor: {
+            default: "primary",
+            type: String
+        },
+        fullscreen: {
+            default: false,
+            type: Boolean
+        },
+        scrollable: {
+            default: true,
+            type: Boolean
+        }
     },
     data () {
       return {
