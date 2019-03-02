@@ -26,11 +26,7 @@
 
     <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card> -->
 
-<<<<<<< HEAD
   <Footer color="secondary"></Footer>
-=======
-  <Footer color="secondary"></Footer>  -->
->>>>>>> 008fe4dc11abf3a6c75b50c37986ada67d63b4b0
 
   </div>
 </template>
