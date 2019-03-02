@@ -8,6 +8,7 @@ import Select from '@/components/Select'
 import Dialog from '@/components/Dialog'
 import Progress from '@/components/Progress'
 import Control from '@/components/Control'
+import Stepper from '@/components/Stepper'
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Dialog,
   Progress,
   Control,
+  Stepper,
 }

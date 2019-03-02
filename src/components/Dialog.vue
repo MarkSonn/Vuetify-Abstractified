@@ -1,7 +1,9 @@
 <template>
 
     <!-- To-Do List:
-        Loader -->
+        Loader
+        Multiple
+    -->
 
   <div class="text-xs-center">
     <v-dialog
