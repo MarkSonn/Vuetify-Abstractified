@@ -4,6 +4,10 @@ import Card from '@/components/Card'
 import Table from '@/components/Table'
 import Snackbar from '@/components/Snackbar'
 import ExpansionPanel from '@/components/ExpansionPanel'
+import Select from '@/components/Select'
+import Dialog from '@/components/Dialog'
+import Progress from '@/components/Progress'
+import Control from '@/components/Control'
 
 export {
   Navbar,
@@ -12,4 +16,8 @@ export {
   Table,
   Snackbar,
   ExpansionPanel,
+  Select,
+  Dialog,
+  Progress,
+  Control,
 }
