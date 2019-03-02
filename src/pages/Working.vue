@@ -4,15 +4,13 @@
       <v-btn to="/demo" flat>Demo</v-btn>
     </Navbar>
 
-<<<<<<< HEAD
   <!-- <v-flex ma-5 md4 offset-md4 sm4 offset-sm4>
         <Card title="Test" subtitle="Yay">
           Helloooo
         </Card>
-  </v-flex>
+  </v-flex> -->
 
 
-=======
     <!-- <Progress theme="rotate" color="red"></Progress> -->
     <!-- <Dialog label="Hello" header="Memes" prompt="Wack">
     alalal
@@ -23,9 +21,8 @@
     <!-- <Control type="switch" color="cyan" :label='["wow","bow","now"]'></Control> -->
 
     <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card>
->>>>>>> 4bdf07dc24d2146cb7f0ce6424e61b8942dd7a4a
 
-  <Footer color="secondary"></Footer> -->
+  <Footer color="secondary"></Footer>  -->
 
   </div>
 </template>
