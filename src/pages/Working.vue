@@ -5,17 +5,21 @@
     </Navbar>
 
     <!-- <Progress theme="rotate" color="red"></Progress> -->
-    <!-- <Dialog label="Hello" header="Memes" prompt="Wack">
-    alalal
-    </Dialog> -->
+    <Dialog label="Hello" header="Memes" header-color="green" prompt-color="yellow" prompt="Wack">
+        Hello
+    </Dialog>
+
+    <!-- <Stepper></Stepper> -->
 
     <!-- <Select label="Helo" color="green" theme="box" hint="memes" multiple chips></Select> -->
 
-    <!-- <Control type="switch" color="cyan" :label='["wow","bow","now"]'></Control> -->
+    <!-- <Control type="checkbox" color="cyan" label="hello"></Control>
+    <Control type="radio" color="cyan"></Control>
+    <Control type="radio" color="cyan" label="yello"></Control> -->
 
-    <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card>
+    <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card> -->
 
-  <Footer color="secondary"></Footer> -->
+  <Footer color="secondary"></Footer>
 
   </div>
 </template>
