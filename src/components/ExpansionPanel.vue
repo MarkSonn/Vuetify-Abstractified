@@ -1,5 +1,6 @@
 <template>
   <v-expansion-panel
+    v-model="panel"
     :dark="dark"
     :light="light"
     :disabled="disabled"
@@ -43,6 +44,6 @@
       popout: Boolean,
       readonly: Boolean,
       icon: Boolean,
-    },
+    }
   }
 </script>

@@ -4,18 +4,9 @@
       <v-btn to="/demo" flat>Demo</v-btn>
     </Navbar>
 
-    <!-- <Progress theme="rotate" color="red"></Progress> -->
-    <!-- <Dialog label="Hello" header="Memes" prompt="Wack">
-    alalal
-    </Dialog> -->
+    <Card title="Hello" subtitle="lol">Yayyyy</Card>
 
-    <!-- <Select label="Helo" color="green" theme="box" hint="memes" multiple chips></Select> -->
-
-    <!-- <Control type="switch" color="cyan" :label='["wow","bow","now"]'></Control> -->
-
-    <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card>
-
-  <Footer color="secondary"></Footer> -->
+  <Footer color="secondary"></Footer>
 
   </div>
 </template>
