@@ -4,6 +4,7 @@
       <v-btn to="/demo" flat>Demo</v-btn>
     </Navbar>
 
+<<<<<<< HEAD
   <!-- <v-flex ma-5 md4 offset-md4 sm4 offset-sm4>
         <Card title="Test" subtitle="Yay">
           Helloooo
@@ -11,6 +12,18 @@
   </v-flex>
 
 
+=======
+    <!-- <Progress theme="rotate" color="red"></Progress> -->
+    <!-- <Dialog label="Hello" header="Memes" prompt="Wack">
+    alalal
+    </Dialog> -->
+
+    <!-- <Select label="Helo" color="green" theme="box" hint="memes" multiple chips></Select> -->
+
+    <!-- <Control type="switch" color="cyan" :label='["wow","bow","now"]'></Control> -->
+
+    <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card>
+>>>>>>> 4bdf07dc24d2146cb7f0ce6424e61b8942dd7a4a
 
   <Footer color="secondary"></Footer> -->
 
