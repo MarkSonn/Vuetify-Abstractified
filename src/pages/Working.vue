@@ -4,6 +4,13 @@
       <v-btn to="/demo" flat>Demo</v-btn>
     </Navbar>
 
+  <!-- <v-flex ma-5 md4 offset-md4 sm4 offset-sm4>
+        <Card title="Test" subtitle="Yay">
+          Helloooo
+        </Card>
+  </v-flex> -->
+
+
     <!-- <Progress theme="rotate" color="red"></Progress> -->
     <Dialog label="Hello" header="Memes" header-color="green" prompt-color="yellow" prompt="Wack">
         Hello
@@ -19,7 +26,11 @@
 
     <!-- <Card title="Hello" subtitle="lol">Yayyyy</Card> -->
 
+<<<<<<< HEAD
   <Footer color="secondary"></Footer>
+=======
+  <Footer color="secondary"></Footer>  -->
+>>>>>>> 008fe4dc11abf3a6c75b50c37986ada67d63b4b0
 
   </div>
 </template>

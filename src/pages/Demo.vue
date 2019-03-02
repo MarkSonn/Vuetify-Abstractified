@@ -1,10 +1,9 @@
 <template>
   <div>
 
-
     <Navbar title="Demo"><v-btn to="/" flat>Working</v-btn></Navbar>
     <v-flex ma-5 pa-5>
-      <ExpansionPanel popout :items="panelData"></ExpansionPanel>
+      <ExpansionPanel focusable popout :items="panelData"></ExpansionPanel>
       <Card title="Demo" subtitle="Card">Content goes here</Card>
       <Table>Example Table</Table>
     </v-flex>
@@ -45,23 +44,23 @@ export default {
   components,
 
   data: () => ({
-    msg: `<Navbar title="Demo"><v-btn to="/" flat>Working</v-btn></Navbar>
-    <v-flex ma-5 pa-5>
-      <ExpansionPanel popout></ExpansionPanel>
-      <Card title="Demo" subtitle="Card">Content goes here</Card>
-      <Table>Example Table</Table>
-    </v-flex>
+    // msg: `<Navbar title="Demo"><v-btn to="/" flat>Working</v-btn></Navbar>
+    // <v-flex ma-5 pa-5>
+    //   <ExpansionPanel popout></ExpansionPanel>
+    //   <Card title="Demo" subtitle="Card">Content goes here</Card>
+    //   <Table>Example Table</Table>
+    // </v-flex>
 
-    <v-flex mb-5 class="text-md-center">
-      <v-btn dark color="green" @click="visible = true">Show Snackbar</v-btn>
-    </v-flex>
+    // <v-flex mb-5 class="text-md-center">
+    //   <v-btn dark color="green" @click="visible = true">Show Snackbar</v-btn>
+    // </v-flex>
 
-    <Snackbar :visible="visible" @closed="visible = false">Wow tasty!</Snackbar>
+    // <Snackbar :visible="visible" @closed="visible = false">Wow tasty!</Snackbar>
 
-    <Card color="accent" dark title="Code"><code>{{ msg }}</code></Card>
+    // <Card color="accent" dark title="Code"><code>{{ msg }}</code></Card>
 
 
-    <Footer class="bottom" tabColor="primary" copyright="Mark Sonnenschein" :links="links"></Footer>`,
+    // <Footer class="bottom" tabColor="primary" copyright="Mark Sonnenschein" :links="links"></Footer>`,
     headers: [
       {
         text: 'Dessert (100g serving)',
