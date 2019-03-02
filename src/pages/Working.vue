@@ -4,9 +4,15 @@
       <v-btn to="/demo" flat>Demo</v-btn>
     </Navbar>
 
-    <Card title="Hello" subtitle="lol">Yayyyy</Card>
+  <!-- <v-flex ma-5 md4 offset-md4 sm4 offset-sm4>
+        <Card title="Test" subtitle="Yay">
+          Helloooo
+        </Card>
+  </v-flex>
 
-  <Footer color="secondary"></Footer>
+
+
+  <Footer color="secondary"></Footer> -->
 
   </div>
 </template>

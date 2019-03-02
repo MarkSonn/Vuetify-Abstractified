@@ -7,19 +7,21 @@
       :color="color"
       :raised="raised"
       :ripple="ripple"
-      :to="to"
-      >
-
+      :to="to">
+      
       <slot name="image"></slot>
 
-      <v-card-title primary-title>
+      <v-card-title v-if="title || subtitle" primary-title>
         <div>
           <div class="headline" v-if="title">{{ title }}</div>
-          <span class="grey--text" v-if="subtitle">{{ subtitle }}<br><br></span>
-          <br v-else>
-          <slot></slot>
+          <span class="grey--text" v-if="subtitle">{{ subtitle }} </span>
         </div>
       </v-card-title>
+
+      <v-card-text :class="{ cardText: title }">
+        <slot></slot>
+      </v-card-text>
+
 
       <v-card-actions v-if="extend || this.$slots.actions">
         <slot name="actions"></slot>
@@ -32,6 +34,7 @@
         </template>
       </v-card-actions>
 
+
       <v-slide-y-transition v-if="extend">
         <v-card-text v-if="show">{{ extend }}</v-card-text>
       </v-slide-y-transition>
@@ -43,6 +46,7 @@
 <script>
   export default {
     props: {
+      size: String,
       title: String,
       subtitle: String,
       color: String,
@@ -58,3 +62,9 @@
     })
   }
 </script>
+
+<style>
+ .cardText {
+   padding-top: 0;
+ }
+</style>
